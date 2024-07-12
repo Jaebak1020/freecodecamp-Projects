@@ -1,0 +1,137 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <div class="every">
+  <body>
+    <h1 id="title">Your Martial Art</h1>
+    <p id="description">How much do you love Martial Arts?</p>
+    <form id="survey-form">
+      <fieldset>
+      <label for="name" id="name-label">Enter your name:<input id="name" type="text" placeholder="Name" required/><label><br>
+      <label for="email" id="email-label">Enter your email:<input id="email" type="email" placeholder="email@___.com" required/></label>
+      </fieldset>
+      <fieldset>
+      <label for="number" id="number-label">How many years have you been doing martial arts? <input id="number" type="number" min="0" max="100" placeholder="0"/></label><br>
+      <label for="dropdown">How many days do you train a week?
+      <select id="dropdown">
+        <option value="">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        </select>
+        </label>
+        </fieldset>
+        <fieldset>
+          <legend>Would you recommend Martial Arts to your friends?</legend>
+      <label for="recommendation"><input type="radio", name="recommendation" class="inline" value="Yes" checked/> Yes </label>
+      <label for="recommendation"><input type="radio", name="recommendation" class="inline" value="No"/> No </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which Martial Arts do you practice?</legend>
+          <label for="art"><input type="checkbox" name="art" id="ma" value="Karate">Karate (Kyokushin, Shotokan..)</label><br>
+          <label for="art"><input type="checkbox" name="art" id="ma"  value="Taekwondo">Taekwondo</label><br>
+          <label for="art"><input type="checkbox" name="art" id="ma"  value="Muay Thai">Muay Thai </label><br>
+          <label for="art"><input type="checkbox" name="art" id="ma"  value="Wrestling">Wrestling</label><br>
+          <label for="art"><input type="checkbox" name="art" id="ma"  value="BJJ">Brazilian Jiu Jutsu (BJJ)</label><br>
+          <label for="art"><input type="checkbox" name="art" id="ma"  value="Boxing">Boxing</label><br>
+          <label for="art"><input type="checkbox" name="art" id="ma"  value="MMA">Mixed Martial Arts(MMA)</label><br>
+          <label for="art"><input type="checkbox" name="art" id="ma"  value="Other">Other</label>
+      </fieldset>
+      <fieldset>
+        <label for="quote">What quote or message motivates you to keep training?
+        <textarea id="quote" name="quote" rows = 5 cols = 50></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  color: white;
+  background-image: url('https://i.insider.com/5d15e8c827b65233b11ff379?width=700&format=jpeg&auto=webp');
+  background-size: cover;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1 {
+        text-decoration: underline;
+  }
+
+h1, p{
+  text-align: center;
+  border-bottom: #6699ff;
+}
+
+fieldset{
+  width: 100%;
+  padding: 2rem 0;
+  margin: 10;
+  border: none;
+  border-bottom: 3px solid #b3b3b3;
+}
+
+fieldset:last-of-type{
+  border-bottom: none;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+input, textarea, select{
+  margin: 6px 3px;
+}
+
+input[type="text"], input[type="email"]{
+  width: 100%;
+  height: 30px
+}
+
+.every {
+  background-color: rgba(0, 0,0, 0.7);
+  background-size: 100px 100px;
+  width:80%;
+  margin: auto;
+
+}
+
+input, textarea{
+  background-color:  #1a1a1a;
+  color: #ffffff
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+
+
+** end of undefined **
+
